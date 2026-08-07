@@ -97,14 +97,17 @@ nav a.active {
     color: #666;
 }
 
-.home-card {
+.home-card,
+.schedule-card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
 }
 
-.home-card img {
+.home-card img,
+.schedule-card img {
     width: 100%;
+    height: 600px;
     border-radius: 20px;
 }
 
@@ -224,7 +227,7 @@ nav a.active {
 
     .content {
         margin-left: 110px;
-        width: calc(100% - 90px);
+        width: calc(100% - 110px);
         padding: 20px;
     }
 
@@ -251,6 +254,17 @@ nav a.active {
 
     .home-card {
         gap: 15px;
+    }
+
+    /* SCHEDULE */
+
+    .schedule-card {
+        gap: 15px;
+    }
+
+    .schedule-card img {
+        width: 100%;
+        height: auto;
     }
 
     /* COSTUME */
