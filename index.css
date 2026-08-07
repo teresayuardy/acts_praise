@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    background: #f6f7fb;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #fffdfb;
+    border-right: 1px solid #ececec;
+    padding: 40px 25px;
+}
+
+.logo {
+    margin-bottom: 50px;
+}
+
+.logo h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2b2b2b;
+}
+
+.logo p {
+    color: #888;
+    font-size: 14px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2b2b2b;
+    padding: 14px 16px;
+    border-radius: 12px;
+    transition: .25s;
+    font-weight: 500;
+}
+
+nav a:hover {
+    background: #f3f4f8;
+}
+
+nav a.active {
+    background: #e9eefc;
+}
+
+/* CONTENT */
+
+.content {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+    padding: 50px;
+}
+
+/* HOME */
+
+.hero {
+    margin-bottom: 50px;
+    margin-top: -15px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    color: #2b2b2b;
+}
+
+.hero h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #2b2b2b;
+}
+
+.hero p {
+    max-width: 650px;
+    line-height: 1.8;
+    color: #666;
+}
+
+.home-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.home-card img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* COSTUME */
+
+.title h2 {
+    margin-top: 50px;
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #2b2b2b;
+}
+
+.costume-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.costume-list,
+.headpiece-list,
+.property-list,
+.accessories-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.costume-list img,
+.property-list img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.costume-list h4,
+.headpiece-list h4,
+.property-list h4,
+.accessories-list h4 {
+    margin-top: 12px;
+    font-weight: 500;
+}
+
+/* HEADPIECE */
+
+.headpiece-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.headpiece-list img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* PROPERTY */
+
+.property-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* ACCESSORIES */
+
+.accessories-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.accessories-list img {
+    width: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* MEDIA QUERY FOR PHONE */
+
+@media (max-width: 768px) {
+
+    /* SIDEBAR */
+
+    .sidebar {
+        width: 110px;
+        padding: 25px 10px;
+    }
+
+    .logo {
+        margin-bottom: 35px;
+        text-align: center;
+    }
+
+    .logo h2 {
+        font-size: 16px;
+        line-height: 1.2;
+    }
+
+    .logo p {
+        font-size: 10px;
+    }
+
+    nav a {
+        padding: 12px 8px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    /* CONTENT */
+
+    .content {
+        margin-left: 110px;
+        width: calc(100% - 90px);
+        padding: 20px;
+    }
+
+    /* HOME */
+
+    .hero {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero h2,
+    .title h2 {
+        font-size: 20px;
+    }
+
+    .hero p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .home-card {
+        gap: 15px;
+    }
+
+    /* COSTUME */
+
+    .costume-card {
+        gap: 15px;
+    }
+
+    .costume-list img {
+        width: 100%;
+    }
+
+    /* HEADPIECE */
+
+    .headpiece-card {
+        gap: 15px;
+    }
+
+    .headpiece-list img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* PROPERTY */
+
+    .property-card {
+        gap: 15px;
+    }
+
+    .property-list img {
+        width: 100%;
+    }
+
+    /* ACCESSORIES */
+
+    .accessories-card {
+        gap: 15px;
+    }
+
+    .accessories-list img {
+        width: 100%;
+    }
+
+    /* KETERANGAN GAMBAR */
+
+    .costume-list h4,
+    .headpiece-list h4,
+    .property-list h4,
+    .accessories-list h4 {
+        font-size: 12px;
+        margin-top: 8px;
+    }
+}
