@@ -6,9 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GMM Acts Praise</title>
     <link rel="stylesheet" href="index.css" type="text/css">
-    <link href="images/icon.ico" rel="shortcut icon">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#fce9f4">
+    <link href="images/ActsPraise_Icon.ico" rel="shortcut icon">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 </head>
+
+<script>
+    if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("./service-worker.js");
+    }
+</script>
 
 <body>
     <!-- Sidebar -->

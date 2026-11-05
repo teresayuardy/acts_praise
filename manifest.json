@@ -1,0 +1,23 @@
+
+{
+    "name": "Acts Praise - Tambourine Ministry Inventory",
+    "short_name": "Tambourine Inventory",
+    "description": "Church tambourine ministry inventory and schedule",
+    "start_url": "./index.html",
+    "scope": "./",
+    "display": "standalone",
+    "background_color": "#f6f7fb",
+    "theme_color": "#fce9f4",
+    "icons": [
+        {
+            "src": "images/ActsPraise_Icon(192).png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "images/ActsPraise_Icon(512).png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
